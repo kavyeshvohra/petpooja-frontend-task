@@ -115,7 +115,6 @@ export const PersonalNotepadCard: React.FC = () => {
         <div className="border-t border-gray-200" />
         <div className="p-6">
           <div className="px-4 space-y-8">
-            <div className="px-4 space-y-8">
             {notes.map((note) => (
               <div key={note.id}  className={`flex items-start gap-3 p-2 rounded-lg transition-colors ${
                 editingNote === note.id ? "bg-gray-100" : ""
@@ -175,6 +174,5 @@ export const PersonalNotepadCard: React.FC = () => {
           </div>
           </div>
       </div>
-    </div>
   );
 };
